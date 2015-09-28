@@ -42,4 +42,17 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
+{
+    NSLog(@"%@", shortcutItem);
+    
+    if ([shortcutItem.type isEqualToString:@"com.sample.myapp.chara"]) {
+        _kind = 0;
+    } else {
+        _kind = 1;
+    }
+    
+    completionHandler(YES);
+}
+
 @end

@@ -15,6 +15,8 @@
 		413F29ED1BB6D2E400D5E49F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413F29EB1BB6D2E400D5E49F /* LaunchScreen.storyboard */; };
 		413F29F81BB6D2E400D5E49F /* touchTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F29F71BB6D2E400D5E49F /* touchTestTests.m */; };
 		413F2A031BB6D2E400D5E49F /* touchTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F2A021BB6D2E400D5E49F /* touchTestUITests.m */; };
+		413F2A111BB6D5D500D5E49F /* chara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 413F2A101BB6D5D500D5E49F /* chara.jpg */; settings = {ASSET_TAGS = (); }; };
+		41917E0D1BB9574800E44905 /* rebi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41917E0C1BB9574800E44905 /* rebi.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		413F29FE1BB6D2E400D5E49F /* touchTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = touchTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		413F2A021BB6D2E400D5E49F /* touchTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = touchTestUITests.m; sourceTree = "<group>"; };
 		413F2A041BB6D2E400D5E49F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413F2A101BB6D5D500D5E49F /* chara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chara.jpg; sourceTree = "<group>"; };
+		41917E0C1BB9574800E44905 /* rebi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rebi.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				413F29E91BB6D2E400D5E49F /* Assets.xcassets */,
 				413F29EB1BB6D2E400D5E49F /* LaunchScreen.storyboard */,
 				413F29EE1BB6D2E400D5E49F /* Info.plist */,
+				413F2A101BB6D5D500D5E49F /* chara.jpg */,
+				41917E0C1BB9574800E44905 /* rebi.jpg */,
 				413F29DD1BB6D2E400D5E49F /* Supporting Files */,
 			);
 			path = touchTest;
@@ -207,6 +213,7 @@
 				TargetAttributes = {
 					413F29D91BB6D2E400D5E49F = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 84R85D47A2;
 					};
 					413F29F21BB6D2E400D5E49F = {
 						CreatedOnToolsVersion = 7.0;
@@ -243,6 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41917E0D1BB9574800E44905 /* rebi.jpg in Resources */,
+				413F2A111BB6D5D500D5E49F /* chara.jpg in Resources */,
 				413F29ED1BB6D2E400D5E49F /* LaunchScreen.storyboard in Resources */,
 				413F29EA1BB6D2E400D5E49F /* Assets.xcassets in Resources */,
 				413F29E81BB6D2E400D5E49F /* Main.storyboard in Resources */,
@@ -411,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = touchTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kyasusoft.com.touchTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = touchTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kyasusoft.com.touchTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +511,7 @@
 				413F2A091BB6D2E400D5E49F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		413F2A0A1BB6D2E400D5E49F /* Build configuration list for PBXNativeTarget "touchTestTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +520,7 @@
 				413F2A0C1BB6D2E400D5E49F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		413F2A0D1BB6D2E400D5E49F /* Build configuration list for PBXNativeTarget "touchTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +529,7 @@
 				413F2A0F1BB6D2E400D5E49F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
